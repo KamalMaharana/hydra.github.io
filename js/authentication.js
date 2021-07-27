@@ -4,7 +4,7 @@ function signup()  {
     var confirmpassword = document.getElementById("confirm_password_input").value;
     if(password == confirmpassword) {
         firebase.auth().createUserWithEmailAndPassword(email, password).then(function() {
-            window.location.href = "pricing.html";
+            window.location.href = "index.html";
         }).catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;
